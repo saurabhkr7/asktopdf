@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Ask To PDF App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+his React application allows users to upload PDF files and communicate with the content within the PDFs through a chat interface. Users can ask questions, request summaries, or query specific information from the uploaded PDFs.
 
-## Available Scripts
+## Table of Contents
+- Getting Started
+- Features
+- Technologies Used
+- Usage
+- Contributing
+- License
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+## `Prerequisites`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before you begin, ensure you have met the following requirements:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Node.js installed
+2. npm or yarn package manager installed
 
-### `npm test`
+## `Installation`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository:
+    git clone [https://github.com/saurabhkr7/asktopdf.git](https://github.com/saurabhkr7/asktopdf.git)
+    cd asktopdf
 
-### `npm run build`
+2. Install project dependencies:
+    npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Create a .env file in the project root and configure your environment variables.
+4. Start the development server:
+    npm start
+5. Access the application in your browser at [http://localhost:3000](http://localhost:3000).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### PDF Upload: 
+Users can upload PDF files to the application.
 
-### `npm run eject`
+### Chat Interface:
+A chat interface allows users to interact with the PDF content using natural language queries.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### PDF Processing:
+The application processes uploaded PDFs to extract text and metadata for querying.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Keyword Search:
+Users can search for specific keywords, phrases, or page numbers within the PDFs.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Summarization:
+The app can generate summaries of the PDF content for easy reference.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. Register or log in to the application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Upload a PDF file.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Use the chat interface to communicate with the PDF content.
 
-### Code Splitting
+4. Ask questions, request summaries, or search for specific information within the PDFs.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the repository
 
-### Making a Progressive Web App
+2. Create a new branch for your feature or bug fix:
+    git checkout -b feature/your-feature-name
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. Make your changes and commit them:
+    git commit -m "Add your feature or fix description"
 
-### Advanced Configuration
+4. Push your changes to your forked repository:
+    git push origin feature/your-feature-name
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. Create a pull request to merge your changes into the main repository.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
