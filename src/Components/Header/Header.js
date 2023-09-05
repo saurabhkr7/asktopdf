@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
     Header,
     HeaderContainer,
     HeaderName,
     HeaderNavigation,
     HeaderMenuButton,
-    HeaderMenuItem,
+    //HeaderMenuItem,
     HeaderGlobalBar,
     HeaderGlobalAction,
     SkipToContent,
@@ -15,7 +16,7 @@ import {
 } from '@carbon/react';
 import { Notification, UserAvatar } from '@carbon/react/icons';
 
-const TutorialHeader = () => (
+const MainHeader = () => (
     <HeaderContainer
         render={({ isSideNavExpanded, onClickSideNavExpand }) => (
             <Header aria-label="Ask To Pdf">
@@ -25,11 +26,11 @@ const TutorialHeader = () => (
                     onClick={onClickSideNavExpand}
                     isActive={isSideNavExpanded}
                 />
-                <HeaderName href="/" prefix="">
+                <HeaderName as={Link} to="/" prefix="">
                     Ask To PDF
                 </HeaderName>
                 <HeaderNavigation aria-label="Ask To Pdf">
-                    <HeaderMenuItem href="/page">Pages</HeaderMenuItem>
+                    {/* <HeaderMenuItem href="/page">Pages</HeaderMenuItem> */}
                 </HeaderNavigation>
                 <SideNav
                     aria-label="Side navigation"
@@ -38,7 +39,7 @@ const TutorialHeader = () => (
                 >
                     <SideNavItems>
                         <HeaderSideNavItems>
-                            <HeaderMenuItem href="/page">Pages</HeaderMenuItem>
+                            {/* <HeaderMenuItem href="/page">Pages</HeaderMenuItem> */}
                         </HeaderSideNavItems>
                     </SideNavItems>
                 </SideNav>
@@ -55,4 +56,4 @@ const TutorialHeader = () => (
     />
 );
 
-export default TutorialHeader;
+export default MainHeader;
